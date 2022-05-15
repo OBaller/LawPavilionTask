@@ -14,6 +14,7 @@
 		C549977128314B51001578FA /* SearchQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549977028314B51001578FA /* SearchQueryTests.swift */; };
 		C549977B28314B51001578FA /* SearchQueryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549977A28314B51001578FA /* SearchQueryUITests.swift */; };
 		C549977D28314B51001578FA /* SearchQueryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549977C28314B51001578FA /* SearchQueryUITestsLaunchTests.swift */; };
+		C549978B283178C0001578FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549978A283178C0001578FA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C549977628314B51001578FA /* SearchQueryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchQueryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C549977A28314B51001578FA /* SearchQueryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryUITests.swift; sourceTree = "<group>"; };
 		C549977C28314B51001578FA /* SearchQueryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C549978A283178C0001578FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		C549975E28314B4F001578FA /* SearchQuery */ = {
 			isa = PBXGroup;
 			children = (
+				C54997892831787A001578FA /* Model */,
 				C549975F28314B4F001578FA /* SearchQueryApp.swift */,
 				C549976128314B4F001578FA /* ContentView.swift */,
 				C549976328314B51001578FA /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				C549977C28314B51001578FA /* SearchQueryUITestsLaunchTests.swift */,
 			);
 			path = SearchQueryUITests;
+			sourceTree = "<group>";
+		};
+		C54997892831787A001578FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C549978A283178C0001578FA /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				C549976228314B4F001578FA /* ContentView.swift in Sources */,
 				C549976028314B4F001578FA /* SearchQueryApp.swift in Sources */,
+				C549978B283178C0001578FA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
