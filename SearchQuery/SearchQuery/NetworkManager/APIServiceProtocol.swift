@@ -7,5 +7,5 @@
 
 import Foundation
 protocol APIServiceProtocol {
-    func fetchBreeds(url: URL?, completion: @escaping(Result<[User], APIError>) -> Void)
+    func fetchUsers(url: URL?, completion: @escaping(Result<[User], APIError>) -> Void)
 }

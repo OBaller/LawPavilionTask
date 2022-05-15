@@ -40,7 +40,7 @@ struct APIService: APIServiceProtocol {
     }
     
     
-    func fetchBreeds(url: URL?, completion: @escaping(Result<[User], APIError>) -> Void) {
+    func fetchUsers(url: URL?, completion: @escaping(Result<[User], APIError>) -> Void) {
         guard let url = url else {
             let error = APIError.badURL
             completion(Result.failure(error))

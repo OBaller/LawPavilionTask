@@ -18,6 +18,7 @@
 		C549978E2831846D001578FA /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549978D2831846D001578FA /* APIServiceProtocol.swift */; };
 		C549979028318496001578FA /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549978F28318496001578FA /* APIError.swift */; };
 		C5499792283184C7001578FA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5499791283184C7001578FA /* APIService.swift */; };
+		C549979528319000001578FA /* UserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549979428318FFF001578FA /* UserFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		C549978D2831846D001578FA /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		C549978F28318496001578FA /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C5499791283184C7001578FA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C549979428318FFF001578FA /* UserFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		C549975E28314B4F001578FA /* SearchQuery */ = {
 			isa = PBXGroup;
 			children = (
+				C549979328318F36001578FA /* ViewModel */,
 				C549978C2831843A001578FA /* NetworkManager */,
 				C54997892831787A001578FA /* Model */,
 				C549975F28314B4F001578FA /* SearchQueryApp.swift */,
@@ -153,6 +156,14 @@
 				C5499791283184C7001578FA /* APIService.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C549979328318F36001578FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C549979428318FFF001578FA /* UserFetcher.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			files = (
 				C549978E2831846D001578FA /* APIServiceProtocol.swift in Sources */,
 				C549976228314B4F001578FA /* ContentView.swift in Sources */,
+				C549979528319000001578FA /* UserFetcher.swift in Sources */,
 				C549976028314B4F001578FA /* SearchQueryApp.swift in Sources */,
 				C549979028318496001578FA /* APIError.swift in Sources */,
 				C5499792283184C7001578FA /* APIService.swift in Sources */,
