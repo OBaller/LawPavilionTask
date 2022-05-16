@@ -15,7 +15,7 @@ struct UserListView: View {
             return users
         } else {
             return users.filter {
-                $0.isLogin.lowercased().contains(searchText.lowercased())
+                $0.login.lowercased().contains(searchText.lowercased())
             }.sorted()
         }
     }

@@ -39,7 +39,7 @@ struct UserDetailView: View {
                 
                 VStack(alignment: .leading, spacing: 15) {
                     
-                    Text(user.isLogin)
+                    Text(user.login)
 //                        .font(.headline)
                     Text(user.type)
 //                        .font(.footnote)

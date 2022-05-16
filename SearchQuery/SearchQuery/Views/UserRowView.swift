@@ -34,7 +34,7 @@ struct UserRowView: View {
             }
             
             VStack(alignment: .leading, spacing: 5) {
-                Text(user.isLogin)
+                Text(user.login)
                     .font(.headline)
                 Text(user.type)
             }
