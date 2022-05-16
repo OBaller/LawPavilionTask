@@ -16,10 +16,10 @@ class UserFetcher: ObservableObject {
     
     init(service: APIServiceProtocol = APIService()) {
         self.service = service
-        fetchAllBreeds()
+        fetchAllUsers()
     }
     
-    func fetchAllBreeds() {
+    func fetchAllUsers() {
         
         isLoading = true
         errorMessage = nil

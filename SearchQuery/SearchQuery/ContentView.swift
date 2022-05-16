@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var userFetcher = UserFetcher()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if userFetcher.isLoading {
+            LoadingView()
+        } else if userFetcher.errorMessage != nil {
+            ErrorView(userFetcher: userFetcher)
+        } else {
+            UserListView(users: userFetcher.users)
+        }
     }
 }
 

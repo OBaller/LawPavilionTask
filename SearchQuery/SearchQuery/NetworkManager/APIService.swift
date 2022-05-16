@@ -55,8 +55,8 @@ struct APIService: APIServiceProtocol {
             }else if let data = data {
                 let decoder = JSONDecoder()
                 do {
-                    let breeds = try decoder.decode([User].self, from: data)
-                    completion(Result.success(breeds))
+                    let users = try decoder.decode([User].self, from: data)
+                    completion(Result.success(users))
                     
                 }catch {
                     completion(Result.failure(APIError.parsing(error as? DecodingError)))

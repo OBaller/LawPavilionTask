@@ -19,6 +19,11 @@
 		C549979028318496001578FA /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549978F28318496001578FA /* APIError.swift */; };
 		C5499792283184C7001578FA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5499791283184C7001578FA /* APIService.swift */; };
 		C549979528319000001578FA /* UserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549979428318FFF001578FA /* UserFetcher.swift */; };
+		C54997982831922A001578FA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54997972831922A001578FA /* LoadingView.swift */; };
+		C549979A28319473001578FA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549979928319473001578FA /* ErrorView.swift */; };
+		C549979C283195BB001578FA /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549979B283195BB001578FA /* UserDetailView.swift */; };
+		C549979E28319958001578FA /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549979D28319958001578FA /* UserRowView.swift */; };
+		C54997A028319E43001578FA /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549979F28319E43001578FA /* UserListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		C549978F28318496001578FA /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C5499791283184C7001578FA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C549979428318FFF001578FA /* UserFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetcher.swift; sourceTree = "<group>"; };
+		C54997972831922A001578FA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C549979928319473001578FA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C549979B283195BB001578FA /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		C549979D28319958001578FA /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		C549979F28319E43001578FA /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 		C549975E28314B4F001578FA /* SearchQuery */ = {
 			isa = PBXGroup;
 			children = (
+				C549979628319211001578FA /* Views */,
 				C549979328318F36001578FA /* ViewModel */,
 				C549978C2831843A001578FA /* NetworkManager */,
 				C54997892831787A001578FA /* Model */,
@@ -164,6 +175,18 @@
 				C549979428318FFF001578FA /* UserFetcher.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C549979628319211001578FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C54997972831922A001578FA /* LoadingView.swift */,
+				C549979B283195BB001578FA /* UserDetailView.swift */,
+				C549979D28319958001578FA /* UserRowView.swift */,
+				C549979F28319E43001578FA /* UserListView.swift */,
+				C549979928319473001578FA /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +324,12 @@
 				C549979528319000001578FA /* UserFetcher.swift in Sources */,
 				C549976028314B4F001578FA /* SearchQueryApp.swift in Sources */,
 				C549979028318496001578FA /* APIError.swift in Sources */,
+				C54997982831922A001578FA /* LoadingView.swift in Sources */,
 				C5499792283184C7001578FA /* APIService.swift in Sources */,
+				C54997A028319E43001578FA /* UserListView.swift in Sources */,
+				C549979A28319473001578FA /* ErrorView.swift in Sources */,
+				C549979E28319958001578FA /* UserRowView.swift in Sources */,
+				C549979C283195BB001578FA /* UserDetailView.swift in Sources */,
 				C549978B283178C0001578FA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

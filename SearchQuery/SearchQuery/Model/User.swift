@@ -10,7 +10,7 @@ import Foundation
 struct User: Codable, Identifiable, Comparable {
     let id: Int
     let isLogin: String
-    let avatarUrl: String
+    let avatarUrl: String?
     let type: String
     
     enum CodingKeys: String, CodingKey {
