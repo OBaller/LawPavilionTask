@@ -12,8 +12,8 @@ struct UserRowView: View {
     let imageSize:CGFloat = 100
     var body: some View {
         HStack {
-            if user.avatarUrl != nil {
-                AsyncImage(url: URL(string: user.avatarUrl!)) { phase in
+            if user.avatar_url != nil {
+                AsyncImage(url: URL(string: user.avatar_url!)) { phase in
                     if let image = phase.image {
                         image.resizable()
                             .scaledToFill()
@@ -44,7 +44,7 @@ struct UserRowView: View {
 
 struct UserRowView_Previews: PreviewProvider {
     static var previews: some View {
-        UserRowView(user: User.example2())
+        UserRowView(user: User.init(id: 24208344, login: "", avatar_url: "", type: ""))
             .previewLayout(.fixed(width: 400, height: 200))
     }
 }

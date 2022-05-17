@@ -9,14 +9,15 @@ import SwiftUI
 
 struct UserListView: View {
     let users: [User]
-    @State private var searchText: String = ""
+    @ObservedObject var userFetcher = UserFetcher()
+    
     var filteredUsers: [User] {
-        if searchText.count == 0 {
+        if userFetcher.searchText.count == 0 {
             return users
         } else {
             return users.filter {
-                $0.login.lowercased().contains(searchText.lowercased())
-            }.sorted()
+                $0.login.lowercased().contains(userFetcher.text.lowercased())
+            }
         }
     }
     var body: some View {
@@ -32,13 +33,13 @@ struct UserListView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Github Users")
-            .searchable(text: $searchText)
+            .searchable(text: $userFetcher.text)
         }
     }
 }
 
 struct UserListView_Previews: PreviewProvider {
     static var previews: some View {
-        UserListView(users: UserFetcher.successState().users)
+        UserListView(users: [User]())
     }
 }
