@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52C76B02833BB0B0084D57D /* APIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C76AF2833BB0B0084D57D /* APIMockService.swift */; };
 		C549976028314B4F001578FA /* SearchQueryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549975F28314B4F001578FA /* SearchQueryApp.swift */; };
 		C549976228314B4F001578FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549976128314B4F001578FA /* ContentView.swift */; };
 		C549976428314B51001578FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C549976328314B51001578FA /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C52C76AF2833BB0B0084D57D /* APIMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMockService.swift; sourceTree = "<group>"; };
 		C549975C28314B4F001578FA /* SearchQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C549975F28314B4F001578FA /* SearchQueryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryApp.swift; sourceTree = "<group>"; };
 		C549976128314B4F001578FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C549978D2831846D001578FA /* APIServiceProtocol.swift */,
+				C52C76AF2833BB0B0084D57D /* APIMockService.swift */,
 				C549978F28318496001578FA /* APIError.swift */,
 				C5499791283184C7001578FA /* APIService.swift */,
 			);
@@ -328,6 +331,7 @@
 				C549979028318496001578FA /* APIError.swift in Sources */,
 				C54997982831922A001578FA /* LoadingView.swift in Sources */,
 				C5499792283184C7001578FA /* APIService.swift in Sources */,
+				C52C76B02833BB0B0084D57D /* APIMockService.swift in Sources */,
 				C54997A028319E43001578FA /* UserListView.swift in Sources */,
 				C549979A28319473001578FA /* ErrorView.swift in Sources */,
 				C549979E28319958001578FA /* UserRowView.swift in Sources */,
